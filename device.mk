@@ -167,6 +167,8 @@ PRODUCT_PACKAGES += \
     libcodec2_vndk.vendor
 
 # Overlays
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 PRODUCT_PACKAGES += \
     FrameworksResOverlayVeux \
     SettingsOverlayVeux \
