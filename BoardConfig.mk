@@ -76,5 +76,8 @@ TARGET_BOARD_PLATFORM := holi
 # Recovery
 BOARD_USES_RECOVERY_AS_BOOT := true
 
+# RIL
+ENABLE_VENDOR_RIL_SERVICE := true
+
 # Inherit from the proprietary version
 include vendor/xiaomi/veux/BoardConfigVendor.mk
