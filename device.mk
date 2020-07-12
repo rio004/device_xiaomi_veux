@@ -37,5 +37,9 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Partitons
+PRODUCT_BUILD_SUPER_PARTITION := false
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Inherit proprietary targets
 $(call inherit-product, vendor/xiaomi/veux/veux-vendor.mk)
