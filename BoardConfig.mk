@@ -135,6 +135,7 @@ BOARD_USES_METADATA_PARTITION := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
+BOARD_VENDOR := xiaomi
 TARGET_BOARD_PLATFORM := holi
 
 # Properties
