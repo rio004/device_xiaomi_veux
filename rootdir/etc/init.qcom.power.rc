@@ -28,20 +28,6 @@
 on enable-low-power
     # Apply settings for holi
 
-    # configure governor settings for little cluster
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor schedutil
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us 500
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us 2000
-    write /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq 1190400
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq 576000
-
-    # configure governor settings for gold cluster
-    write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor schedutil
-    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/down_rate_limit_us 500
-    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/up_rate_limit_us 2000
-    write /sys/devices/system/cpu/cpufreq/policy6/schedutil/hispeed_freq 1248000
-    write /sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq 768000
-
     # Enable bus-dcvs
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/min_freq 762
     write /sys/devices/platform/soc/soc:qcom,cpu-cpu-ddr-bw/devfreq/soc:qcom,cpu-cpu-ddr-bw/governor bw_hwmon
