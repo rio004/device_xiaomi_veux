@@ -83,5 +83,8 @@ TARGET_USERIMAGES_USE_F2FS := true
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+# Sepolicy
+include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+
 # Inherit from the proprietary version
 include vendor/xiaomi/veux/BoardConfigVendor.mk
