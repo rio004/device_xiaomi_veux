@@ -8,6 +8,20 @@ DEVICE_PATH := device/xiaomi/veux
 
 BUILD_BROKEN_DUP_RULES := true
 
+# A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    odm \
+    product \
+    system \
+    system_ext \
+    vbmeta \
+    vbmeta_system \
+    vendor \
+    vendor_boot
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a
@@ -32,6 +46,9 @@ DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := holi
+
+# Recovery
+BOARD_USES_RECOVERY_AS_BOOT := true
 
 # Inherit from the proprietary version
 include vendor/xiaomi/veux/BoardConfigVendor.mk
