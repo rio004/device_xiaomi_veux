@@ -52,14 +52,13 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    init.qti.kernel.sh \
     init.qcom.sh \
     init.qcom.early_boot.sh \
     vendor_modprobe.sh
 
 PRODUCT_PACKAGES += \
     init.qcom.rc \
-    init.qti.kernel.rc \
+    init.qcom.power.rc \
     init.target.rc \
     init.recovery.qcom.rc \
     fstab.qcom \
