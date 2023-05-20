@@ -46,6 +46,34 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# Audio
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio.service \
+    android.hardware.bluetooth.audio@2.0-impl \
+    android.hardware.soundtrigger@2.3-impl
+
+PRODUCT_PACKAGES += \
+    audio.bluetooth.default \
+    audio.primary.holi \
+    audio.r_submix.default \
+    audio.usb.default \
+
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libbatterylistener \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libsndmonitor \
+    libspkrprot \
+    libvolumelistener
+
 # Partitons
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

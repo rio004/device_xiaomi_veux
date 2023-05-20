@@ -147,7 +147,6 @@ vendor/etc/usb_audio_policy_configuration.xml
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
-vendor/lib/soundfx/libeffectproxy.so
 vendor/lib/soundfx/libhwdap.so
 vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libqcbassboost.so
@@ -157,40 +156,15 @@ vendor/lib/soundfx/libshoebox.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libswgamedap.so
 vendor/lib/soundfx/libswvqe.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libeffectproxy.so
-vendor/lib64/soundfx/libhwdap.so
-vendor/lib64/soundfx/libmisoundfx.so
-vendor/lib64/soundfx/libqcbassboost.so
-vendor/lib64/soundfx/libqcreverb.so
-vendor/lib64/soundfx/libqcvirt.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/soundfx/libswgamedap.so
-vendor/lib64/soundfx/libswvqe.so
 
 # Audio hardware
-vendor/lib/hw/audio.primary.holi.so
-vendor/lib/liba2dpoffload.so
 vendor/lib/libadm.so
-vendor/lib/libaudio_log_utils.so
-vendor/lib/libaudioalsa.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
 vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
-vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
-vendor/lib64/hw/audio.primary.holi.so
-vendor/lib64/liba2dpoffload.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libaudioalsa.so
-vendor/lib64/libaudioconfigstore.so
-vendor/lib64/libaudioparsers.so
-vendor/lib64/libhdmipassthru.so
-vendor/lib64/libqtigef.so
-vendor/lib64/libssrec.so
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
