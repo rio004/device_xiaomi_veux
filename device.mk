@@ -91,6 +91,34 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.mapper@3.0-impl-qti-display \
+    android.hardware.graphics.mapper@4.0-impl-qti-display
+    
+PRODUCT_PACKAGES += \
+    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack@1.0-service \
+    memtrack.default
+
+PRODUCT_PACKAGES += \
+    libsdmcore \
+    libsdmutils \
+    libqdMetaData \
+    libdisplayconfig.vendor \
+    libdisplayconfig.qti.vendor \
+    libtinyxml \
+    libvulkan \
+    vendor.display.config@1.15 \
+    vendor.display.config@1.15.vendor \
+    vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
+    vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor \
+
 # Partitons
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
