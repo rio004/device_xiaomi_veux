@@ -166,6 +166,10 @@ PRODUCT_PACKAGES += \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor
 
+# Overlays
+PRODUCT_PACKAGES += \
+    WifiOverlay
+
 # Partitons
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
